@@ -88,7 +88,7 @@ $viewModel->setTemplate('mail/html');
 $message = $messageService->createHtmlMessage(
     ['email' => 'john@example.com', 'name' => 'John'], //from 
     ['email' => 'jane@example.com', 'name' => 'Jane'] //to
-    "This is the subject line, //subject
+    "This is the subject line", //subject
     $viewModel); // View model
 
 $messageService->send($message);
